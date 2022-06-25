@@ -1,0 +1,65 @@
+package MCDBP100D5;
+
+{$R *.RES}
+{$R 'mbpMCDBPro.dcr'}
+{$R 'mbpExDDPro.dcr'}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'Magic CD Burner (Pro)'}
+{$DESIGNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  vcl50;
+
+contains
+  mbpMCDBPro in 'mbpMCDBPro.pas',
+  mbpReg in 'mbpReg.pas',
+  mbpExDDPro in 'mbpExDDPro.pas',
+  mbpWNASPI32 in 'mbpWnASPI32.pas',
+  mbpCache in 'mbpCache.pas',
+  mbpCDBurner in 'mbpCDBurner.pas',
+  mbpClassesW in 'mbpClassesW.pas',
+  mbpCommonLib in 'mbpCommonLib.pas',
+  mbpConsts in 'mbpConsts.pas',
+  mbpDeviceTypes in 'mbpDeviceTypes.pas',
+  mbpECMA_167 in 'mbpECMA_167.pas',
+  mbpErase in 'mbpErase.pas',
+  mbpHash in 'mbpHash.pas',
+  mbpISO9660 in 'mbpISO9660.pas',
+  mbpOSTA_UDF_150 in 'mbpOSTA_UDF_150.pas',
+  mbpPropertyEditor in 'mbpPropertyEditor.pas',
+  mbpSCSIDefs in 'mbpSCSIDefs.pas',
+  mbpSCSILib in 'mbpSCSILib.pas',
+  mbpSmartReferences in 'mbpSmartReferences.pas',
+  mbpSysUtilsW in 'mbpSysUtilsW.pas',
+  mbpTree in 'mbpTree.pas',
+  mbpTreeTypes in 'mbpTreeTypes.pas',
+  mbpUDF_CRC in 'mbpUDF_CRC.pas',
+  mbpUDFBridge in 'mbpUDFBridge.pas',
+  mbpUDFTime in 'mbpUDFTime.pas',
+  mbpUDFTypes in 'mbpUDFTypes.pas',
+  mbpUDFUnicode in 'mbpUDFUnicode.pas',
+  mbpUDFUtils in 'mbpUDFUtils.pas',
+  mbpVerify in 'mbpVerify.pas';
+
+end.
